@@ -24,20 +24,22 @@ namespace TicTacToeWithWindowsForms
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (CalculateMark.whoseTurn %2 == 0)
+            if (Board.whoseTurn %2 == 0)
             {
                 button1.Text = "X";
                 button1.Enabled = false;
-                CalculateMark.whoseTurn++;
+                Board.whoseTurn++;
                 Board.userBoard[0,0] = 1;
             }
             else
             {
                 button1.Text = "0";
                 button1.Enabled = false;
-                CalculateMark.whoseTurn++;
-                Board.comBoard[0, 0] = 0;
+                Board.whoseTurn++;
+                Board.comBoard[0, 0] = 1;
             }
+
+            checkWin();
         }
     }
 }
