@@ -1,3 +1,3 @@
 # TicTacToeWithWindowsForms
 
-![Play image](/screenshot.jpg)
+![Play image](/screenshot.JPG)
